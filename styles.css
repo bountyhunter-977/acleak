@@ -7,3 +7,31 @@
   display: block;
   object-fit: contain;
 }
+/* Service card images */
+.service {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.service > img {
+  width: calc(100% + 54px);
+  height: 180px;
+  object-fit: cover;
+  margin: -27px -27px 22px;
+  display: block;
+  border-radius: 22px 22px 0 0;
+}
+
+.service .service-number,
+.service h3,
+.service p,
+.service a {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 560px) {
+  .service > img {
+    height: 210px;
+  }
+}
